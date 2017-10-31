@@ -67,10 +67,10 @@ CLASS lcl_main IMPLEMENTATION.
         " Runtime error LOAD_PROGRAM_CLASS_MISMATCH here, because the subroutine pool has a class
         " that inherits from a newer version of ZCL_CLASSTEST than is active in this internal mode.
         CREATE OBJECT lo_test4 TYPE (lv_classname).
-        CALL METHOD: lo_test2->('TEST_1'),
-                     lo_test2->('TEST_2'),
-                     lo_test2->('TEST_3').
-        CALL METHOD lo_test2->('TEST_4').
+        CALL METHOD: lo_test4->('TEST_1'),
+                     lo_test4->('TEST_2'),
+                     lo_test4->('TEST_3').
+        CALL METHOD lo_test4->('TEST_4').
       ENDIF.
 
     ELSE.
